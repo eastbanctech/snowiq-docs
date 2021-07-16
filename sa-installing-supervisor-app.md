@@ -23,6 +23,7 @@ The app titled "SnowIQ" Supervisor is available only on the <a href="https://app
 Once you have navigated to the app store, hit the "GET" button and wait for the app to download. Once it has downloaded, navigate to your iPad's home screen. There, you will find the SNOWiQ Supervisor app. 
 
 <img src="image/supervisor/ipad-app-homescreen.jpg" class="ios" width="500"/>
+</section>
 
 <section id="Login" markdown="1">
 ## Login
@@ -30,3 +31,5 @@ Once you have navigated to the app store, hit the "GET" button and wait for the 
 Tap the icon on your home screen to open the app. Upon opening the app, you will be asked to login. Enter your credentials to proceed.
 
 <img src="image/supervisor/supervisor-login.jpg" class="ios" width="500"/>
+</section>
+</section>
