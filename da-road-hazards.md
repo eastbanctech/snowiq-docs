@@ -6,40 +6,53 @@ name: EastBanc Technologies
 email: contact@eastbanctech.com
 parent: Driver App
 nav_order: 4
-platform: true
+platform: false
 comments: true
 ---
 <section id="Road-Hazards" markdown="1">
+
 # Road Hazards
 
-<section id="Creating-Road-Hazards" markdown="1">
-## Creating Road Hazards
-A Driver can create a road hazard on the map to warn other Drivers of the hazards on their routes, by following the steps below:
-  - On the map, press the road hazard plus icon
-  - The system will display the 'New road hazard' prompt shown below
-  - Choose the type of road hazard from the list and press 'Yes' to confirm the creation of a new road hazard on the next prompt
-  - The system will display the hazards as either a road plate or a warning as seen below
-    - Road plates (orange stacked layers marker): permanent hazard on the road
-    - Temporary hazard (orange warning triangle marker): tree down/power line down, accident, etc.
-    
-       **Note:** These hazards will appear on the map for all Supervisors and Drivers that are working in the same service area
+A Road Hazard is a marker icon on the map to inform users of reported road hazards. Users can view reported hazards on the map, and can also report new hazards to inform other app users working in the same service area.
 
-<img src="images/driver/da-road-hazards/creating-road-hazard-ios.png" class="ios width-sm" data-lightbox="1-group" />
-<img src="images/driver/da-road-hazards/creating-road-hazard-android.png" class="android width-sm" data-lightbox="2-group" />
-<img src="images/driver/da-road-hazards/creating-road-hazard1-ios.png" class="ios width-sm" data-lightbox="1-group" />
-<img src="images/driver/da-road-hazards/creating-road-hazard1-android.png" class="android width-sm" data-lightbox="2-group" />
+
+<img src="images/driver/da-road-hazards/da-road-hazards.png" class="ios width-sm" data-lightbox="1" />
+<img src="images/driver/da-road-hazards/da-road-hazard-info.png" class="ios width-sm" data-lightbox="3" />
+
+<section id="Creating-Road-Hazards" markdown="1">
+
+## Creating Road Hazards
+
+To create a Road Hazard from the Driver App, do the following:
+  - On the map, select the road hazard plus (+) icon
+  - The system will display the 'New road hazard' prompt.
+
+<img src="images/driver/da-road-hazards/da-add-a-road-hazard.png" class="ios width-sm" data-lightbox="2" />
+
+  - Select the type of road hazard from the list, then select 'Yes' to confirm.
+
+  - The system will display hazards as either a road plate or a warning, as shown in the image at the top of this page.
+    - Road plates (orange stacked layers marker): A permanent hazard on the road
+    - Temporary hazard (orange warning triangle marker): A temporary road hazard such as a fallen tree, downed power line, or traffic accident
+
+**Note:** These hazards will appear on the map for all Supervisors and Drivers that are working in the same service area.
 
 </section>
 
 <section id="Deleting-Road-Hazards" markdown="1">
-## Deleting Road Hazards
-A Driver can delete an existing road hazard from the map if it doesn't exist anymore: 
-  - Press on an existing road hazard on the map
-  - The system will display the following 'Road hazard info' prompt
-  - Press 'Delete' and press 'Yes' on the next prompt to confirm deletion of the road hazard
-  - Once deleted, the marker is removed from the map for everyone
 
-<img src="images/driver/da-road-hazards/deleting-road-hazard-ios.png" class="ios width-sm" data-lightbox="3" />
-<img src="images/driver/da-road-hazards/deleting-road-hazard-android.png" class="android width-sm" data-lightbox="4" />
+## Deleting Road Hazards
+
+A road hazard can be manually deleted when it is resolved, outdated, or no longer exists.
+
+To delete a marker:
+  - Tap an existing road hazard on the map
+  - The system will display a 'Road hazard info' window
+  - Tap 'Delete' and select 'Yes' on the confirmation prompt
+
+<img src="images/driver/da-road-hazards/da-road-hazard-delete-confirmation.png" class="ios width-sm" data-lightbox="4" />
+
+Once deleted, the marker will be removed from the map for all system users.
+
 </section>
 </section>
