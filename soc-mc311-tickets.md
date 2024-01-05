@@ -101,9 +101,9 @@ An Admin user can manually close the ticket if the ticket is deemed to be invali
 * Click the blue 'Close' button which is located on the List View on the right of the ticket, or on the Map View in the popup details for the ticket, as shown below.
 * Select 'Yes' on the validation popup.
 
-![Screenshot 2021-03-05 100420](https://user-images.githubusercontent.com/79857237/110134066-014a9500-7d9b-11eb-929a-d0c18e5cca20.png){: .width-xl}{: data-lightbox="3"}
+![Close_Ticket](https://github.com/eastbanctech/snowiq-docs/assets/121882947/fd2326de-d0b6-4c04-b884-67ea46a810dc){: .width-xl}{: data-lightbox="3"}
 
-![Screenshot 2021-03-05 100449](https://user-images.githubusercontent.com/79857237/110134073-03145880-7d9b-11eb-944a-a26d7e199c0b.png){: .width-xl}{: data-lightbox="3"}
+![Close_Ticket1](https://github.com/eastbanctech/snowiq-docs/assets/121882947/31a5d83e-314c-444c-a3b5-b0f7ade9c451){: .width-xl}{: data-lightbox="3"}
 
 If the status of the ticket is 'Assigned' or 'In Progress', a warining prompt will display as shown below:
 
