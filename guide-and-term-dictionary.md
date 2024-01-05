@@ -19,9 +19,9 @@ SNOWiQ is a snowplow fleet management and reporting tool for municipalities, sno
 
 **For Storm Operations Managers/Supervisors** - SNOWiQ’s easy-to-use application lets you visualize your contractor fleet in real-time, from city-wide fleet activity, down to individual neighborhoods. Prioritize fleet movements, dynamically assign, re-route, redeploy, or add drivers, from within the app. You can also enforce quality control, improve performance, time management, and customer service. 
 
-**For Snowplow Operators** - Municipal and contractor drivers can use smartphones they already own to advertise their availability, receive notifications when routes are assigned to them, seamlessly switch to Google Maps for directions, and confirm when routes are completed.  
+**For Snowplow Operators** - Municipal and contractor drivers can use their smartphones they already own to advertise their availability, receive notifications when routes are assigned to them, seamlessly switch to Google Maps for directions, and confirm when routes are completed.  
 
-**For the Public** - SNOWiQ’s public portal provides residents and businesses with much-needed transparency into snow removal efforts. One portal shows when streets will be plowed, weather updates, and snow removal statistics.
+**For the Public** - SNOWiQ’s public portal provides residents and businesses with much-needed transparency into snow removal efforts. The portal displays when streets will be plowed, weather updates, and snow removal statistics.
 </section>
 
 <section id="Application-Summaries" markdown="1">
