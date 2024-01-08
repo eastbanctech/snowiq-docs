@@ -38,7 +38,7 @@ When a snow storm is approaching, to plan the event before it occurs (there are 
 
 **Note:** Because the newly created Event is not yet active, it can be edited or deleted. Once the Event is Active, these these options are no longer available. 
 
-![Event_management](https://github.com/eastbanctech/snowiq-docs/assets/121882947/ac94ab65-ce48-4595-9d42-9816f5bfff50){: .width-xl}{: data-lightbox="1"}
+![Event_management](https://github.com/eastbanctech/snowiq-docs/assets/121882947/ac94ab65-ce48-4595-9d42-9816f5bfff50){: .width-xl}{: data-lightbox="11"}
 
 <section id="Event-Activation" markdown="1">
 
