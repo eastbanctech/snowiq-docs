@@ -12,7 +12,7 @@ comments: true
 <section id="Routes-Tab-View" markdown="1">
 # Routes Tab View
 
-A panel on the left has three tabs: Routes, Drivers, and Tickets. The app opens to Routes, as seen below.
+A panel on the left has three tabs: Routes, Resources, Tickets and Inspectors. The app opens to Routes, as seen below.
 
 The Route panel displays a list of routes with their corresponding route name and number, the percentage of completion for any active assignment, the total number of miles on the route, and a color coded status indicator on the map. Filters for the list are available above the list and include the following: by Depot, Route Type, and Route Status.  
 
