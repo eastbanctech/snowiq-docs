@@ -40,8 +40,6 @@ The Routes tab located to the left of the map as shown below and displays a list
 
 The Resources tab to the right of the Routes tab is shown below and displays a list of Resources with their names and statuses (color coded – see markers and Status Descriptions). When selecting a Resource from the list, resource details will be displayed above their icon which is located on the ma,p as shown below. This provides additional details like the Driver's photo, Supervisor name, and the last time the Driver was seen using the Driver App (DA). 
 
-Clicking on the Blue arrow to the right of the Driver name produces the Driver's Profile panel, with additional details.
-
 </section>
 
 <section id="Resources-Tab" markdown="1">
