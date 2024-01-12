@@ -128,11 +128,11 @@ An Admin user can manually create an Emergency Ticket by doing the following:
 
 * Click on the marker and the system will display the following prompt.
 
-![Screenshot 2021-03-05 100619](https://user-images.githubusercontent.com/79857237/110134147-132c3800-7d9b-11eb-88a4-06a9e6f3503e.png){: .width-xl}{: data-lightbox="3"}
+![Emergency_Ticket](https://github.com/eastbanctech/snowiq-docs/assets/121882947/dddb3399-595b-416c-9c1f-744ef2ac421e){: .width-xl}{: data-lightbox="8"}
 
 * Enter any notes in the Notes field and then select a Supervisor to send it to.
 
-![Screenshot 2021-03-05 100640](https://user-images.githubusercontent.com/79857237/110134156-158e9200-7d9b-11eb-98e2-c3e57794d898.png){: .width-xl}{: data-lightbox="3"}
+![Emergency_Ticket3](https://github.com/eastbanctech/snowiq-docs/assets/121882947/a4c6b0fb-3ad8-4c5d-9d30-6d8886bdc32a){: .width-xl}{: data-lightbox="8"}
 
 * If the ticket was created while on the MC311 Tickets Map View, the newly created ticket is added to the list on the panel to the left with a red asterisk as  an Emergency Ticket. Its status is set to 'Sent' which indicates the process of sending it to the Supervisor has been completed.
 </section>
