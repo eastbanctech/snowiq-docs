@@ -107,8 +107,7 @@ An Admin user can manually close the ticket if the ticket is deemed to be invali
 
 If the status of the ticket is 'Assigned' or 'In Progress', a warining prompt will display as shown below:
 
-![Screenshot 2021-03-05 100512](https://user-images.githubusercontent.com/79857237/110134084-06a7df80-7d9b-11eb-94cc-93a25ec425af.png){: .width-xl}{: data-lightbox="3"}
-
+![Close_Ticket3](https://github.com/eastbanctech/snowiq-docs/assets/121882947/cc558a49-e4a7-4084-a5e2-3d00b2cf4b79){: .width-xl}{: data-lightbox="3"}
 </section>
 
 <section id="Creating-Emergency-Ticket-Requests" markdown="1">
