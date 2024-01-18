@@ -59,5 +59,7 @@ An Admin user can edit the personal information of users after they have been up
 
 An Admin user can Deactivate users when they are no longer needed in the system or no longer needed to fulfill duties. This removes the user from being displayed in selection lists throughout the application (e.g. task assignment). To deactivate the user, locate the user and click on the 'Deactivate' button (shown below) and click 'Yes' to proceed to the next prompt. The user will be deactivated, and a 'Reactivate' button will be displayed for the user. To reactivate a user, follow the same process: Click on 'Reactivate', and the user will again be activated in the system.
 
+![User_Management1](https://github.com/eastbanctech/snowiq-docs/assets/121882947/048cc133-825f-431c-bc2a-8d67f3eefda7)
+
 </section>
 </section>

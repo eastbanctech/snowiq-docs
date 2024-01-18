@@ -22,8 +22,10 @@ On the Route Plans page, an Admin user can view the currently used geo-location 
 
 An Admin can upload the geo-location data by doing the following:
 
-* Select the orange 'Import Plan Files' at the top of the Route Plans page.
+* Select the blue ' + Import Route Plan' button at the top of the Route Plans page.
 * The system will display a prompt. Do the following:
+
+![Import_Plan](https://github.com/eastbanctech/snowiq-docs/assets/121882947/d5fc6345-62d0-477a-a241-0d951e10b596){: .width-xl}{: data-lightbox="11"}
 
 * Select the Depot the geo-location data belong to specify the routes for that depot or overwrite the previous route plan.
 * Select 'Import'

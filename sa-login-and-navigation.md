@@ -49,15 +49,20 @@ The diagram below highlights basic navigation controls and map elements of the S
 <section id="Main-Menu" markdown="1">
 ### Main Menu
  
-Users can navigate to the Settings Menu by selecting the 'Gear' icon as specified in the diagram above. A menu opens to the 'My Profile' page automatically. The following menu options are available:
+Users can navigate to the Main Menu by selecting the 'Hamburger Menu' icon. User can navigate to Resource Management, Truck Management, Phases & Routes, Material Usage, Material Log, Road Conditions, Event Logs, Notification History, My Profile, Settings, and About pages.
 
-<img src="images/supervisor/sa-login-and-navigation/settings-menu.png" class="android width-xl" data-lightbox="8" />
+<![Main_menu](https://github.com/eastbanctech/snowiq-docs/assets/121882947/316d595a-49c2-4c60-adc9-f647ff1c5479)" class="android width-xl" data-lightbox="6" />
 </section>
 
 <section id="My-Profile" markdown="1">
 #### My Profile
  
+User can navigate to their profile by selecting 'My Profile' from the menu. The following menu options are available: 
+ 
 A user can edit their  profile by selecting 'Edit Profile' in the top right corner, as shown above above. This allows the user to edit their information including name, phone number and email.
+</section>
+
+<img src="images/supervisor/sa-login-and-navigation/settings-menu.png" class="android width-xl" data-lightbox="8" />
 </section>
 
 <section id="About" markdown="1">
@@ -70,6 +75,8 @@ Displays the current version of the app.
 #### Event Log
  
 The Event Log allows a Supervisor to view details of user actions and timestamps of those actions actions for a current, active Event. The log displays the time the action occurred in the system, what the action was, and who performed the action (username or system). Actions may include creating an Assignment or activating a new Phase for a Depot.
+
+<![Event_log](https://github.com/eastbanctech/snowiq-docs/assets/121882947/239cbea9-8d79-4cb5-b672-a27053f0b9b4)" class="ios width-xl" data-lightbox="6" />
 
 </section>
 

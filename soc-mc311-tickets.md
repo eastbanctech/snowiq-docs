@@ -101,7 +101,13 @@ An Admin user can manually close the ticket if the ticket is deemed to be invali
 * Click the blue 'Close' button which is located on the List View on the right of the ticket, or on the Map View in the popup details for the ticket, as shown below.
 * Select 'Yes' on the validation popup.
 
+![Close_Ticket](https://github.com/eastbanctech/snowiq-docs/assets/121882947/fd2326de-d0b6-4c04-b884-67ea46a810dc){: .width-xl}{: data-lightbox="3"}
+
+![Close_Ticket1](https://github.com/eastbanctech/snowiq-docs/assets/121882947/31a5d83e-314c-444c-a3b5-b0f7ade9c451){: .width-xl}{: data-lightbox="3"}
+
 If the status of the ticket is 'Assigned' or 'In Progress', a warining prompt will display as shown below:
+
+![Screenshot 2021-03-05 100512](https://user-images.githubusercontent.com/79857237/110134084-06a7df80-7d9b-11eb-94cc-93a25ec425af.png){: .width-xl}{: data-lightbox="3"}
 
 </section>
 
@@ -122,7 +128,11 @@ An Admin user can manually create an Emergency Ticket by doing the following:
 
 * Click on the marker and the system will display the following prompt.
 
+![Emergency_Ticket](https://github.com/eastbanctech/snowiq-docs/assets/121882947/dddb3399-595b-416c-9c1f-744ef2ac421e){: .width-xl}{: data-lightbox="8"}
+
 * Enter any notes in the Notes field and then select a Supervisor to send it to.
+
+![Emergency_Ticket3](https://github.com/eastbanctech/snowiq-docs/assets/121882947/a4c6b0fb-3ad8-4c5d-9d30-6d8886bdc32a){: .width-xl}{: data-lightbox="8"}
 
 * If the ticket was created while on the MC311 Tickets Map View, the newly created ticket is added to the list on the panel to the left with a red asterisk as  an Emergency Ticket. Its status is set to 'Sent' which indicates the process of sending it to the Supervisor has been completed.
 </section>
