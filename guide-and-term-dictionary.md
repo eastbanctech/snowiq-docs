@@ -78,6 +78,12 @@ Supervisors are managers over specific depots (potentially more than one) and ar
 
 </section>
 
+<section id="Chief-Supervisor" markdown="1">
+### Chief Supervisor
+
+A Chief Supervisor is responsible for a whole Depot, including the Supervisors and Inspectors who work in it. Chief Supervisors use the same applications as Supervisors.
+</section>
+
 <section id="Inspector" markdown="1">
 ### Inspector
 
@@ -119,18 +125,64 @@ When a Season is referenced in conjunction with SNOWiQ, it typically refers to a
 ### Event
 
 An Event is a single entity created by a Storm Operations Manager to create a plan for an upcoming snow storm (typically 1-2 weeks before the actual storm).
+
+<section id="Event-Statuses" markdown="1">
+
+#### Event Statuses
+
+| New | The event has been created but not yet activated. It can still be edited or deleted. |
+| Active | The event is in progress. Only one event can be active at a time. |
+| Archived | The event is over and closed. Its event log and reports can still be viewed. |
+
+</section>
 </section>
 
 <section id="Phase" markdown="1">
 ### Phase
 
 A Phase in SNOWiQ is a timeframe used during a Storm Event to define certain activities to be performed by drivers. An example of a Phase would be 'Plowing' - a Phase with an Activity set to 'Plowing' would set all assignments to this activity and drivers included in this phase would need to plow their assigned routes. Several phases can be active at the same time; when activating a new phase, a user can choose to complete or pause the currently active phase (see [Phase Management](soc-phase-management.html)).
+
+<section id="Phase-Statuses" markdown="1">
+
+#### Phase Statuses
+
+| New | The phase has been created but not yet activated. |
+| Active | The phase has been activated. Several phases can be active at the same time. |
+| Completed | The phase has been completed manually by a Supervisor. |
+| Archived | The event the phase belongs to has been archived. |
+
 </section>
+</section>
+
+<section id="Monitoring-Phase" markdown="1">
+### Monitoring Phase
+
+The Monitoring phase is created automatically for every depot when an event is created, and is activated automatically when the event is activated. It covers the time before active work begins, when Supervisors watch conditions and get resources into position, for example by sending Drivers to a [staging location](#Staging-Location). The Monitoring phase must always be completed manually.
+</section>
+
+<section id="Activity" markdown="1">
+### Activity
+
+An Activity is the type of work to be performed, for example Monitoring, Salting, or Plowing. Every phase and every assignment has an Activity. Drivers see the Activity of each assignment in the Driver App.
+</section>
+
 
 <section id="Depot" markdown="1">
 ### Depot
 
-A Depot is a centralized hub that manages a number of routes in the service area. Typically, a single Supervisor manages a depot. A Depot can potentially have multiple Inspectors that manage individual routes within the service area.
+A Depot is a centralized hub that manages a number of routes in its [service area](#Service-Area). Typically, a single Supervisor manages a depot. A Depot can potentially have multiple Inspectors that manage individual routes within the service area.
+</section>
+
+<section id="Service-Area" markdown="1">
+### Service Area
+
+A Service Area is the set of routes that a single depot is responsible for. The service areas of all depots together make up the area covered by SNOWiQ. Throughout the applications, filtering by depot limits the map and lists to that depot's service area.
+</section>
+
+<section id="Staging-Location" markdown="1">
+### Staging Location
+
+A Staging Location is a point on the map where Drivers are sent to wait, ready to start work, before the active phase of an event begins (usually during the Monitoring phase). Supervisors send Drivers to a staging location by creating a [Staging Location assignment](sa-supervisor-activities.html#Creating-Staging-Location-Assignment) in the Supervisor App.
 </section>
 
 <section id="Driver-1" markdown="1">
@@ -156,10 +208,32 @@ A Truck is a piece of heavy vehicle equipment that has a profile in the system. 
 </section>
 </section>
 
+<section id="Truck-Class" markdown="1">
+### Truck Class
+
+Trucks are grouped by equipment class: Tandem, Heavy, Medium, Light, and Pickup. Truck classes are used when requesting trucks from contractor companies and in the Truck Inventory (see [Contractor Request](soc-contractor-request.html)).
+</section>
+
+<section id="Truck-Certification" markdown="1">
+### Truck Certification
+
+A truck must be certified before it can be used. Trucks can be certified or decertified in [Truck Management](soc-truck-management.html). A reason is required to decertify a truck, for example a failed inspection. A decertified truck has the 'Inactive' status.
+</section>
+
 <section id="Resource-1" markdown="1">
 ### Resource
 
 A Resource is composed of a Driver and a Truck. Resources are managed in the Storm Operation Center and Supervisor app. Resources can have different statuses depending on the Storm Event stage.
+
+<section id="Resource-Actions" markdown="1">
+
+#### Resource Actions
+
+| Check-in | After logging in to the Driver App, a Driver submits a check-in request with their truck. A Supervisor reviews and confirms it in [Resource Management](sa-resource-management.html#check-in-resources), and the Driver becomes a resource for the event. |
+| Shift Handover | Moves a resource's assignments to another resource, for example at the end of a shift. The previous Driver is then released automatically. |
+| Release | Releases a Driver from duty. The Driver is logged out of the Driver App, and their truck becomes available to another Driver. |
+
+</section>
 
 <section id="Resource-Checkin-Statuses" markdown="1">
 
@@ -201,6 +275,19 @@ A Route is a set of geo-located path lines within a depot, previously uploaded i
 
 </section>
 
+<section id="Route-Segment-Types" markdown="1">
+#### Route Segment Types
+
+A route is made up of road segments. Each segment has a type, shown by its color on the map:
+
+* **Emergency (red):** Roads that must be cleared first.
+* **Primary (blue):** Main roads. Primary segments can be part of both Emergency and Residential routes.
+* **Neighborhood (orange):** Residential streets.
+
+Segment type is not the same as route type (Emergency or Residential). Route type describes the priority of the whole route.
+
+</section>
+
 <section id="Route-Statuses" markdown="1">
 
 #### Route Statuses
@@ -215,12 +302,30 @@ A Route is a set of geo-located path lines within a depot, previously uploaded i
 | Inspected | The route has had its assignment verified and finalized by an inspector. |
 
 </section>
-</section>  
+</section>
+
+<section id="Route-Plan" markdown="1">
+### Route Plan
+
+A Route Plan is the geo-data file that defines the routes, road segments, and boundaries of a depot. Admins upload Route Plans in [Route Management](soc-route-plans.html). When a new Route Plan is uploaded, the previous version is archived. Each event uses a specific Route Plan version.
+</section>
+
+<section id="Committed-Route" markdown="1">
+### Committed Route
+
+A Committed Route is a route that a Supervisor has selected to be worked during a phase. Supervisors choose which routes to commit when activating a phase, and can commit more routes as the event progresses (see [Commit Routes](soc-phase-management.html#Commit-Routes)).
+</section>
+
+<section id="Breadcrumbs" markdown="1">
+### Breadcrumbs
+
+Breadcrumbs are the trail of GPS points recorded by the Driver App as a Driver works a route. They show on the map which parts of a route have been completed, and are used to calculate route progress. The system also uses breadcrumbs to validate MC311 tickets (see [Ticket Import Validation Rules](soc-mc311-tickets.html#Ticket-Import-Validation-Rules)).
+</section>
 
 <section id="Assignment" markdown="1">
 ### Assignment
 
-An Assignment is a task created by a Supervisor and assigned to a Resource. An assignment can be for an existing route, an address, or a ticket.
+An Assignment is a task created by a Supervisor and assigned to a Resource. An assignment can be for an existing route, an address, a staging location, or a ticket.
 
 <section id="Assignment-Statuses" markdown="1">
 
@@ -235,6 +340,18 @@ An Assignment is a task created by a Supervisor and assigned to a Resource. An a
 | Cancelled | Supervisor manually canceled the assignment. |
 
 </section>
+</section>
+
+<section id="Pass" markdown="1">
+### Pass, Single-Pass and Multi-Pass Assignments
+
+A Pass is one complete run of a route by a Driver. A **single-pass** assignment is finished after one pass. In a **multi-pass** assignment, the Driver completes a pass and then waits while the Supervisor decides whether another pass is needed (status 'Completed Pending'). The Supervisor either requests another pass or completes the assignment. See [Completing Assignments for Multi-Passes](sa-supervisor-activities.html#Completing-Assignments-for-Multi-Passes).
+</section>
+
+<section id="Priority-Task" markdown="1">
+### Priority Task
+
+A Priority Task is an assignment that a Supervisor has marked as a priority. It is placed at the top of the Driver's queue of Future assignments. Any type of assignment can be a priority task.
 </section>
 
 <section id="Ticket" markdown="1">
@@ -265,6 +382,84 @@ A Ticket is a geo-point service request from different users of the system. Once
 | Closed |  A Supervisor has manually closed a ticket; or the system has checked the service request and found it invalid and set the ticket to closed; or the assigned resource has finished the work and marked the assignment as completed. |
 
 </section>
-</section> 
+</section>
+</section>
+
+<section id="Contractors" markdown="1">
+## Contractors
+
+<section id="Contractor-Company" markdown="1">
+### Contractor Company
+
+A Contractor Company is a company contracted to provide trucks and drivers during snowstorm events. Each company has a [Contractor Manager](#contractor-manager). Admins and Supervisors add contractor companies to an event.
+</section>
+
+<section id="Contractor-Request" markdown="1">
+### Contractor Request
+
+A Contractor Request is a request from a Supervisor to a contractor company for a number of trucks of each class, for a specific depot and inspector. A request is 'On-Hold' until the Contractor Manager confirms it, and then becomes 'Confirmed'. See [Contractor Request](soc-contractor-request.html).
+</section>
+
+<section id="Truck-Inventory" markdown="1">
+### Truck Inventory
+
+The Truck Inventory shows, for an event and by truck class, how many contractor trucks are available, requested, confirmed, and checked in, and how many confirmed trucks have not yet checked in.
+</section>
+</section>
+
+<section id="Field-Conditions-and-Materials" markdown="1">
+## Field Conditions and Materials
+
+<section id="Road-Hazard" markdown="1">
+### Road Hazard
+
+A Road Hazard is a marker on the map that warns users of a hazard on the road. A **road plate** is a permanent hazard, and a **temporary hazard** is something like a fallen tree, downed power line, or traffic accident. Drivers and Supervisors can create and delete road hazards, and they are visible to all users working in the same service area. See [Road Hazards](da-road-hazards.html).
+</section>
+
+<section id="Road-Condition" markdown="1">
+### Road Condition
+
+A Road Condition is a report of road and air temperature and precipitation at a specific location, created by a Supervisor or Inspector in the Supervisor App. Road Conditions expire 1 hour after they are reported. See [Road Conditions](soc-road-conditions.html).
+</section>
+
+<section id="Thermal-Map" markdown="1">
+### Thermal Map
+
+The Thermal Map is a statistical heatmap that shows how the temperature of each road segment typically compares to the average for the area. It does not show real-time temperatures. See [Thermal Map](soc-road-conditions.html#thermal-map).
+</section>
+
+<section id="Material" markdown="1">
+### Material
+
+Material is the salt or brine loaded onto trucks to treat roads. Supervisors and Inspectors log material loadings and returns for each resource in the Supervisor App, and material usage is reported in the Active Storm Report. See [Material Management](sa-material-management.html).
+</section>
+</section>
+
+<section id="Application-Features" markdown="1">
+## Application Features
+
+<section id="Event-Log" markdown="1">
+### Event Log
+
+The Event Log is a record of the actions taken during an event: what happened, when, and who did it (a user or the system). It is available in the SOC as the [Active Storm Log](soc-active-storm-log-report.html) and in the Supervisor App.
+</section>
+
+<section id="Detached-Mode" markdown="1">
+### Detached Mode
+
+Detached Mode is an offline mode of the Driver App. It downloads the map and the Driver's assignments in advance, so the Driver can keep working when the network is unavailable. See [Detached Mode](da-detached-mode.html).
+</section>
+
+<section id="Cluster" markdown="1">
+### Cluster
+
+A Cluster is a numbered marker that groups nearby markers when the map is zoomed out. Selecting a cluster zooms in to show the individual markers.
+</section>
+
+<section id="Map-Layers" markdown="1">
+### Map Layers
+
+Map Layers control which markers and road segments are displayed on the map in the Supervisor App. See [Map Layers](sa-login-and-navigation.html#Map-Layers).
+</section>
 </section>
 </section>

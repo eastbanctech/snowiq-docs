@@ -15,10 +15,11 @@ comments: true
 <section id="Creating-New-Assignments" markdown="1">
 ## Creating New Assignments
 
-There are three ways to create new assignments within the Supervisor App: 
+There are four ways to create new assignments within the Supervisor App: 
 1. From the Route Details panel by selecting 'Assign Resources' 
 2. From the Resource Details panel by selecting 'Add Task'  
-3. From the Map Monitoring view by selecting a Route or Resource
+3. From the Map Monitoring view by searching for an address ([Address Specific Assignment](#Creating-Address-Specific-Assignment))
+4. From the Map Monitoring view by tapping a location on the map ([Staging Location Assignment](#Creating-Staging-Location-Assignment))
 
 <section id="Assigning-New-Resources" markdown="1">
 
@@ -82,6 +83,27 @@ A Supervisor can create an Assignment related to a specific address by doing the
 * Tap 'Assign'
 
 * This will add the assignment to the selected Resource's Future list with a status of 'Pending', and the system will prompt the Driver in the Driver App (DA) to accept the Assignment.
+</section>
+
+<section id="Creating-Staging-Location-Assignment" markdown="1">
+### Creating Staging Location Assignment
+
+A Staging Location assignment sends one or more Drivers to a specific location on the map, where they wait, ready to start work. It is typically used before the active phase of an event begins (usually during the Monitoring phase), so that resources are already in position when plowing or salting starts.
+
+A Staging Location assignment works like an [Address Specific Assignment](#Creating-Address-Specific-Assignment), but the location is selected by tapping on the map instead of searching for an address. This is useful when the staging location does not have a precise street address (for example, a parking lot, a yard, or a point along a road).
+
+To create a Staging Location assignment:
+
+* From the Map Monitoring view (either tab: Routes, Resources, or Tickets), tap the location on the map where the Drivers should be staged
+* Select the option to create a staging location assignment
+* Complete the assignment prompt, which is similar to the address specific assignment prompt:
+  * Select type of Activity
+  * Specify whether it is a priority task using the Priority task toggle control
+  * Enter a note to the Resource(s), for example, instructions on where exactly to park or wait
+  * Select one or more Resources by either searching for a Driver name in the search bar, or by selecting available resources from the list which can be filtered by Depot (defaulted to the Supervisor's Depot), and/or Resource Type (County or Contractor)
+* Tap 'Assign'
+
+The assignment is added to the Future list of each selected Resource with a status of 'Pending', and the system prompts each Driver in the Driver App (DA) to accept the Assignment. Drivers can then use the Navigate button in the Driver App to get directions to the staging location.
 </section>
 </section>
 
