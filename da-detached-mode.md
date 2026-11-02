@@ -43,9 +43,9 @@ To synchronize all assignments, go to **Main menu > Assignments** and tap on the
 
 The App will then download and synchronize all the assignments existing in the system, including planned assignments for future phases that have not yet been activated.
 
-This allows drivers to continue updating the progress and managing their assignments while offline. However, due to the lack of a connection, we recommend that all work performed while in Deatached Mode is coordinated and communicated with the Inspector/Supervisor by radio.
+This allows drivers to continue updating the progress and managing their assignments while offline. However, due to the lack of a connection, we recommend that all work performed while in Detached Mode is coordinated and communicated with the Inspector/Supervisor by radio.
 
-### Turn off Detached mode
+### Turn off Detached Mode
 
 To deactivate Detached Mode, go to **Main menu > Settings > Detached Mode > Turn Off**. 
 

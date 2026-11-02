@@ -42,15 +42,15 @@ Each truck has a profile in the system with details related to vehicle inspectio
 
 ### Editing Truck Information
 
-To edit existing truck details, select the "Edit Truck Profile" button. Make necessary corrections in the form and then select 'Save Changes'. The system will display 'Success'. If the truck is currently in use on the active event, it cannot be edited and system will display an error message.
+To edit existing truck details, select the "Edit Truck Profile" button. Make necessary corrections in the form and then select 'Save Changes'. The system will display 'Success'. If the truck is currently in use on the active event, it cannot be edited and the system will display an error message.
 
 ### Certify or Decertify a Truck
 
-A newly created truck is certified by default. To certify a truck, Select the 'Certify' button. To decertify a truck, select the "Decertify" button. A decertification reason is mandatory to finish Decertification.
+A newly created truck is certified by default. To certify a truck, select the 'Certify' button. To decertify a truck, select the "Decertify" button. A decertification reason is mandatory to finish Decertification.
 
 Depending on certification status, a truck can have different statuses:
 
 | Active | Truck successfully passed inspection and has been certified by Supervisor. |
-| Inactive | Truck has been uncertified because of a failed inspection. |
-| In Review | Contractor's truck has been created and is waiting pending certification by the Contractor manager. |
+| Inactive | Truck has been decertified because of a failed inspection. |
+| In Review | Contractor's truck has been created and is pending certification by the Contractor Manager. |
 

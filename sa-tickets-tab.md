@@ -13,11 +13,11 @@ comments: true
 
 # Tickets Tab View
 
-When an Admin sends a new ticket to a Supervisor, it will be appear as a ticket count on the Ticket tab for the Supervisor, as described below.
+When an Admin sends a new ticket to a Supervisor, it will appear as a ticket count on the Ticket tab for the Supervisor, as described below.
 
 After selecting the Tickets tab, the Tickets panel displays a list of tickets and markers on the map that represent those tickets and their statuses. This allows users to view where tickets are located in the service area. Above the list, there is a set of filters: by Depot, Route, Ticket Status, and Ticket Type. 
    
-A new Ticket is notated with a 'New' tag and identified with a red asterisk marker on the map.. A checkmark on any type of ticket indicates that the ticket is closed.
+A new Ticket is notated with a 'New' tag and identified with a red asterisk marker on the map. A checkmark on any type of ticket indicates that the ticket is closed.
 
 <img src="images/supervisor/sa-tickets-tab/tickets-tab.png" class="ios width-xl" data-lightbox="4" />
 
@@ -29,7 +29,7 @@ Using the filters on the side panel allows Supervisors a more focused view of MC
 <section id="Depot" markdown="1">
 ### Depot
 
-The depot filter defaults to the depot the Supervisor it is assigned to and only displays the tickets within that Depot's service area. 
+The depot filter defaults to the depot the Supervisor is assigned to and only displays the tickets within that Depot's service area. 
 </section>
 
 <section id="Route" markdown="1">
@@ -48,7 +48,7 @@ The Ticket Status filter allows users to view any ticket set to a specific statu
   * Assigned: The Supervisor has created the Assignment in the SA and sent it to the Driver, but the work has not started
   * In Progress: The Driver has started working on the ticket assignment
   * Closed: 
-  1. An Admin user manually closes a ticket that they have deemed invalid or is not neccessary. 
+  1. An Admin user manually closes a ticket that they have deemed invalid or is not necessary. 
   2. The system has checked the service request and found it invalid and has closed the ticket. 
   3. The assigned driver has completed the task and marked the assignment as completed (which closes the ticket throughout all systems).
   * Pending: The system has found the ticket to be invalid and is preparing to close the ticket.
