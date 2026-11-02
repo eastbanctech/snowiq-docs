@@ -67,7 +67,7 @@ This web site allows residents of the county to view statistics about the curren
 <section id="Admin" markdown="1">
 ### Storm Operations Manager
 
-The Admin (or Storm Operations Manager) - This user's primary role is to plan work on upcoming storm events. They are responsible for creating the events in the Snow Operations Center (SOC), along with setting up the phases for supervisors to create assignments for resources. They will mainly use the SNOWiQ SOC for planning and management.
+The Storm Operations Manager (assigned the 'Admin' role in SNOWiQ) - This user's primary role is to plan work on upcoming storm events. They are responsible for creating the events in the Storm Operations Center (SOC), along with setting up the phases for supervisors to create assignments for resources. They will mainly use the SNOWiQ SOC for planning and management.
 
 </section>
 
@@ -81,7 +81,7 @@ Supervisors are managers over specific depots (potentially more than one) and ar
 <section id="Inspector" markdown="1">
 ### Inspector
 
-Inspectors are responsible for the management of contractor resorces, route assignements of assignments, and ensuring the completion of those assignments by reviewing the work done by the drivers onsite when an assignment is completed. Inspectors primarily use the SNOWiQ Supervisor Application (SA).
+Inspectors are responsible for the management of contractor resources and route assignments, and ensuring the completion of those assignments by reviewing the work done by the drivers onsite when an assignment is completed. Inspectors primarily use the SNOWiQ Supervisor Application (SA).
 
 Currently, Supervisors and Inspectors have the same application access (both SA and SOC). The difference is primarily in who they manage: Inspectors manage Contractors, Supervisors primarily manage employees, and Chief Supervisors are responsible for the whole Depot.
 </section>
@@ -89,7 +89,7 @@ Currently, Supervisors and Inspectors have the same application access (both SA 
 <section id="Contractor Manager" markdown="1">
 ### Contractor Manager
 
-Contractor Manager - A Contractor Manager is an individual who represents a contracted company that acts as a resource to support Snow Storm Events on a part-time basis. The Contractor Manager has access to SOC and is responsible for managing a contractor's fleet, and is responsible for providing up-to-date equipment information and confirming truck availability.
+A Contractor Manager is an individual who represents a contracted company that acts as a resource to support Snow Storm Events on a part-time basis. The Contractor Manager has access to SOC and is responsible for managing a contractor's fleet, and is responsible for providing up-to-date equipment information and confirming truck availability.
 
 </section>
 
@@ -124,7 +124,7 @@ An Event is a single entity created by a Storm Operations Manager to create a pl
 <section id="Phase" markdown="1">
 ### Phase
 
-Phase - A Phase in SnowIQ is a timeframe used during a Storm Event to define certain activities to be performed by drivers. An example of a Phase would be 'Plowing' - a Phase with an Activity set to 'Plowing' would set all assignments to this activity and drivers included in this phase would need to plow their assigned routes. One phase must be completed before the next can begin, as they cannot overlap.
+A Phase in SNOWiQ is a timeframe used during a Storm Event to define certain activities to be performed by drivers. An example of a Phase would be 'Plowing' - a Phase with an Activity set to 'Plowing' would set all assignments to this activity and drivers included in this phase would need to plow their assigned routes. Several phases can be active at the same time; when activating a new phase, a user can choose to complete or pause the currently active phase (see [Phase Management](soc-phase-management.html)).
 </section>
 
 <section id="Depot" markdown="1">
@@ -138,23 +138,20 @@ A Depot is a centralized hub that manages a number of routes in the service area
 
 See ‘Driver’ Definition under the ‘Roles’ section above. When logged into the app, Storm Operations Managers, supervisors, and inspectors will be able to see the driver markers on an interactive map along with their current status at the time (notated by a color specified in Status below). Employees can be found on the map with a circular snowplow marker while contractors will be found with a square marker.
 
-<section id="Driver-Statuses" markdown="1">
-
-</section>
 </section>
 
 <section id="Truck-1" markdown="1">
 ### Truck
 
-Truck is a heavy vehicle equipment that has its profile in the system. All Truck profiles are created by Storm Operations Manager and stored in the system and can be managed in Truck Management module.
+A Truck is a piece of heavy vehicle equipment that has a profile in the system. All Truck profiles are created by Storm Operations Manager and stored in the system and can be managed in Truck Management module.
 
 <section id="Truck-Statuses" markdown="1">
 
 #### Truck Statuses
 
 | Active | Truck successfully passed inspection and has been certified in the system. |
-| Inactive | Truck has been uncertified because of a failed inspection. |
-| In Rewiew | Contractor's truck has been created and is pending certification by the contractor manager. |
+| Inactive | Truck has been decertified because of a failed inspection. |
+| In Review | Contractor's truck has been created and is pending certification by the contractor manager. |
 
 </section>
 </section>
@@ -169,7 +166,7 @@ A Resource is composed of a Driver and a Truck. Resources are managed in the Sto
 #### Resource Check-in Statuses
 
 | New |  Create a new resource, or import a resource from a previous event. |
-| Checked-in | The Storm Event has started and a driver user is logged in to his profile on the Driver app and has confirmed a truck. |
+| Checked-in | The Storm Event has started and a driver user is logged in to their profile on the Driver app and has confirmed a truck. |
 | Released | The driver has been released from the truck. |
 | Abandoned | When a driver changes truck, a new resource is created and the old one becomes Abandoned. |
 
@@ -193,7 +190,7 @@ A Resource is composed of a Driver and a Truck. Resources are managed in the Sto
 <section id="Route" markdown="1">
 ### Route
 
-Route - is a number of geo-located path lines within a depot that was previously uploaded into SOC that is used in assignments to drivers along with a status indicator (color-coded based on route status). Route is a combination of route segments with one or more segment types (emergency, primary or neighborhood). A Route can have multiple assignments and drivers attached to it.
+A Route is a set of geo-located path lines within a depot, previously uploaded into the SOC, that is used in assignments to drivers along with a status indicator (color-coded based on route status). Route is a combination of route segments with one or more segment types (emergency, primary or neighborhood). A Route can have multiple assignments and drivers attached to it.
 
 <section id="Route-Types" markdown="1">
 #### Route Types
@@ -213,7 +210,7 @@ Route - is a number of geo-located path lines within a depot that was previously
 | Pending | There is at least one assignment but it hasn't yet been accepted by the Driver. |
 | Assigned | There is at least one accepted assignment for the route. |
 | Started | There is at least one started assignment for the route. |
-| Complete Pending | There is at least one completed pass on a multi-pass assignment and it's awaiting action from Supervisor. |
+| Completed Pending | There is at least one completed pass on a multi-pass assignment and it's awaiting action from Supervisor. |
 | Completed | The route has had its assignment(s) completed by assigned driver(s), or the inspector/supervisor manually set the route to 'completed'. |
 | Inspected | The route has had its assignment verified and finalized by an inspector. |
 
@@ -223,7 +220,7 @@ Route - is a number of geo-located path lines within a depot that was previously
 <section id="Assignment" markdown="1">
 ### Assignment
 
-The Assignment - A task created by a Supervisor and assigned to a Resource. An assignment can be for an existing route, an address, or a ticket.
+An Assignment is a task created by a Supervisor and assigned to a Resource. An assignment can be for an existing route, an address, or a ticket.
 
 <section id="Assignment-Statuses" markdown="1">
 
@@ -244,7 +241,7 @@ The Assignment - A task created by a Supervisor and assigned to a Resource. An a
 
 ### Ticket
 
-Ticket - A geo-point service request from different users of the system. Once the ticket is created, the system automatically associate it with a route. Depending on the user who requested the service, a ticket can have different type.
+A Ticket is a geo-point service request from different users of the system. Once the ticket is created, the system automatically associates it with a route. Depending on the user who requested the service, a ticket can have a different type.
 
 <section id="Ticket-Types" markdown="1">
 
@@ -262,10 +259,10 @@ Ticket - A geo-point service request from different users of the system. Once th
 
 | New  | The system has validated that the 311 ticket is valid for assignment, or a new emergency ticket was created but not yet sent out for assignment. |
 | Sent | The Storm Operations Manager user has reviewed the ticket and sent it to Supervisor App (SA) for assignment creation. |
-| Assigned | The Supervisor has created the Assignement in the SA and has sent it to the Driver, but the work has not begun. |
+| Assigned | The Supervisor has created the Assignment in the SA and has sent it to the Driver, but the work has not begun. |
 | In Progress | The Driver commenced work on the ticket assignment. |
 | Pending | The system has defined the ticket as invalid and is preparing to close it. |
-| Closed |  A Supervisor has manually closed a ticket; or the system has checked the sevice request and found it invalid and set the ticket to closed; or the assigned resource has finished the work and marked the assignment as completed. |
+| Closed |  A Supervisor has manually closed a ticket; or the system has checked the service request and found it invalid and set the ticket to closed; or the assigned resource has finished the work and marked the assignment as completed. |
 
 </section>
 </section> 

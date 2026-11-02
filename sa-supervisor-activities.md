@@ -16,7 +16,7 @@ comments: true
 ## Creating New Assignments
 
 There are three ways to create new assignments within the Supervisor App: 
-1. From the Routes tab by selecting 'Assign new Resource' 
+1. From the Route Details panel by selecting 'Assign Resources' 
 2. From the Resource Details panel by selecting 'Add Task'  
 3. From the Map Monitoring view by selecting a Route or Resource
 
@@ -26,7 +26,7 @@ There are three ways to create new assignments within the Supervisor App:
 
 A Supervisor can assign a new resource to a route by following the steps below:
 
-* From the 'Routes Details' panel, tap 'Assign Resources' as shown below.
+* From the 'Route Details' panel, tap 'Assign Resources' as shown below.
 
  
 <img src="images/supervisor/sa-supervisor-activities/assigning-new-drivers.png" class="android width-xl" data-lightbox="1" />
@@ -39,7 +39,7 @@ A Supervisor can assign a new resource to a route by following the steps below:
   * Select a Resource by either searching for a Driver name in the search bar, or by selecting an available resource from the list which can be filtered by Depot (defaulted to the Supervisor's Depot), and/or Resource Type (County or Contractor)
 
 * Select 'Assign'
-* This will add the assignment to the Route Details with the name of the Driver, along with an Assignment status of 'Pending' to indicate that the Assignment has been sent to the Driver but not yet accepted. It also adds the Assignment to the the list of Future Assignments for the Resource, as described and shown in the section below. This action will also be sent to the Driver App to prompt the Driver to accept the Assignment.
+* This will add the assignment to the Route Details with the name of the Driver, along with an Assignment status of 'Pending' to indicate that the Assignment has been sent to the Driver but not yet accepted. It also adds the Assignment to the list of Future Assignments for the Resource, as described and shown in the section below. This action will also be sent to the Driver App to prompt the Driver to accept the Assignment.
 
 
 <section id="Adding-Tasks" markdown="1">
@@ -81,7 +81,7 @@ A Supervisor can create an Assignment related to a specific address by doing the
   * Select a Resource by either searching for a Driver name in the search bar, or by selecting an available resource from the list which can be filtered by Depot (defaulted to the Supervisor's Depot), and/or Resource Type (County or Contractor)
 * Tap 'Assign'
 
-* This will add the assignment
+* This will add the assignment to the selected Resource's Future list with a status of 'Pending', and the system will prompt the Driver in the Driver App (DA) to accept the Assignment.
 </section>
 </section>
 
@@ -89,11 +89,11 @@ A Supervisor can create an Assignment related to a specific address by doing the
 
 ## Completing Assignments for Multi-Passes
 
-A multi-pass Assignment (which is an assignment was created when the multi-pass toggle was switched On) requires a Supervisor to determine the next step after each pass is completed by the Driver. Once the Driver completes a pass, the Supervisor receives a 'Pass Completion Notice' prompt with  details about the assignment, including the number of passes made, as shown below. A Supervisor then has two options:  
+A multi-pass Assignment (an assignment created when the multi-pass toggle was switched On) requires a Supervisor to determine the next step after each pass is completed by the Driver. Once the Driver completes a pass, the Supervisor receives a 'Pass Completion Notice' prompt with  details about the assignment, including the number of passes made, as shown below. A Supervisor then has two options:  
 1. Tap 'Another Pass' to notify the Driver to continue working on the assignment, or
 1. Tap 'Complete' to complete the multi-pass assignment. 
 
-If a Supervisor selects the first option, the system notifies the Driver to continue working on the assignment (i.e. make another pass). If the supervisor selects the second option, the system marks the multi-pass Assignment as Completed and removes it from the respurce's Active Assignments. Completed assignments can be viewed by selecting the History tab.
+If a Supervisor selects the first option, the system notifies the Driver to continue working on the assignment (i.e. make another pass). If the supervisor selects the second option, the system marks the multi-pass Assignment as Completed and removes it from the resource's Active Assignments. Completed assignments can be viewed by selecting the History tab.
 
 </section>
 
@@ -118,7 +118,7 @@ Supervisors can cancel assignments by doing the following:
 <section id="Inspecting-Routes" markdown="1">
 ### Inspecting Routes
 
-Once a Route has all its assignments completed, a Supervisor needs to change the status of that route to 'Inspected' to verify that the route is finished. To do this, navigate to the Route Details panel and select 'Change Status', and then select 'Inspected' on the prompt.
+Once a Route has all its assignments completed, a Supervisor or Inspector needs to change the status of that route to 'Inspected' to verify that the route is finished. To do this, navigate to the Route Details panel and select 'Change Status', and then select 'Inspected' on the prompt.
  
 <img src="images/supervisor/sa-supervisor-activities/inspecting-routes.png" class="ios width-xl" data-lightbox="20" />
 
@@ -133,7 +133,15 @@ Once a Route has all its assignments completed, a Supervisor needs to change the
 
 ### Changing Resource Status
 
-A Supervisor can change the status of a contractor resource.
+A Supervisor can manually change the status of a Contractor resource, for example from 'Logged in' to 'Standby' or 'Ready'. Contractor status determines how payment is calculated (see [Resource Service Statuses](guide-and-term-dictionary.html#Resource-Service-Statuses)). To change a status:
+
+* Open the Resource Details panel for the Contractor
+* Select 'Change status'
+* Select the new status (Standby or Ready)
+
+<img src="images/supervisor/sa-supervisor-activities/change-driver-status.png" class="ios width-xl" data-lightbox="22" />
+
+</section>
 
 <section id="Assigning-Resource-to-Tickets" markdown="1">
 
@@ -143,7 +151,7 @@ A Supervisor can assign an existing ticket to a Resource, by doing the following
 
 * Navigate to the Tickets tab
 * Select the ticket to assign
-* On the 'Routes Details' panel, select 'Assign Resource'.
+* On the 'Ticket Details' panel, select 'Assign Resources'.
 
 <img src="images/supervisor/sa-supervisor-activities/assigning-drivers.png" class="ios width-xl" data-lightbox="24" />
 
@@ -161,13 +169,12 @@ This will remove the 'New' tag from the ticket on the ticket list and change the
 <section id="Pausing-or-Resuming-Resource" markdown="1">
 ### Pausing or Resuming a Resource
 
-A Supervisor may want to pause an assignment to document that no work is being performed on the route for a period of time. This may occur if a resource resource must refill salt or go to gas station. Pausing an assignment ensures that off-route travel is not included in route information. When the Resource status is 'In Service', a Supervisor can pause an Active Assignment that a Driver has accepted or is working on, or resume it after it's been paused by doing the following:
+A Supervisor may want to pause an assignment to document that no work is being performed on the route for a period of time. This may occur if a resource must refill salt or go to a gas station. Pausing an assignment ensures that off-route travel is not included in route information. When the Resource status is 'In Service', a Supervisor can pause an Active Assignment that a Driver has accepted or is working on, or resume it after it's been paused by doing the following:
 
-* From the Driver Details panel, select 'Pause' and then select 'Yes' on the verification prompt
+* From the Resource Details panel, select 'Pause' and then select 'Yes' on the verification prompt
 * The system will change the resource's status to 'Paused', and will notify the Driver in the Driver App that their Assignment has been paused and to wait for further instructions
 * To resume the assignment, select 'Resume' on the paused Resource
 
- </section>
  </section>
  </section>
 

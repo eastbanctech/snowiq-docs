@@ -12,7 +12,7 @@ comments: true
 
 # Road Conditions
 
-Road Condition provides information on Road Surface Temperature and Precipitation details at a specific location of the service area.
+A Road Condition provides information on Road Surface Temperature and Precipitation details at a specific location of the service area.
 
 All the Road Conditions are reported by Supervisors or Inspectors using the Supervisor App.
 
@@ -22,7 +22,7 @@ The Road Conditions page is accessible through the main menu of the Web Portal a
 
 ![soc-road-conditions-map-screen](images/soc/soc-road-conditions/soc-road-conditions-map-screen.png){: data-lightbox="1"}
 
-The road conditions page can present items in two modes: List and List+ Map. To change the mode, click on the switch in the upper left corner of the screen.
+The road conditions page can present items in two modes: List and List + Map. To change the mode, click on the switch in the upper left corner of the screen.
 
 The list can be filtered and sorted by Depot, Route ID, and time frame. The user can also show/hide expired conditions by clicking the "Expired" checkbox.
 

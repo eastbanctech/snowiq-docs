@@ -22,7 +22,7 @@ The login screen shown below allows users to enter the SNOWiQ Storm Operations C
 
 Once logged into the SOC, all users will see the Map Monitoring view, which is also called the 'Active Storm Ops' page.
 
-**Only users assigned 'Admin' role in SNOWiQ can access the SOC web portal.**
+**The pages available in the SOC depend on the user's role (see [Roles in SNOWiQ](guide-and-term-dictionary.html#Roles-in-SNOWiQ-SOC-User-Management)). Some pages, such as User Management and Route Plans, are available to Admin users only.**
 
 </section>
 
@@ -36,7 +36,7 @@ Users can find the navigation menu to access the other pages in the portal by se
 <section id="Active-Storm-Ops" markdown="1">
 ### Active Storm Ops
 
-The Active Storm Ops page allows users to view real-time visual progress of a storm event. This includes Route data inclufing how much has been salted/plowed, what is remaining, number of passes made, along with Driver information including task progress, Driver details, and Driver location.
+The Active Storm Ops page allows users to view real-time visual progress of a storm event. This includes Route data including how much has been salted/plowed, what is remaining, number of passes made, along with Driver information including task progress, Driver details, and Driver location.
 
 ![Active Storm Ops](/images/soc/soc-login-and-navigation/home-page1.png){: .width-xl}{: data-lightbox="4"}
 </section>
@@ -52,7 +52,7 @@ The Active Storm Log page is an Event Log that allows Admins to view all the act
 <section id="Active-Storm-Report" markdown="1">
 ### Active Storm Report
 
-The Active Storm Report page allows Admins to view Event progress details in the SNOWiQ Statistics Dashboard. The main tab, 'Storm Event', includes statistics such as miles plowed, active staff, snowfall, and salt usage. More granular reporting can be found in other tabs which include Phase, Route, Driver, and Salt Usage.
+The Active Storm Report page allows Admins to view Event progress details in the SNOWiQ Statistics Dashboard. The main tab, 'Storm Event', includes statistics such as miles plowed, active staff, snowfall, and salt usage. More granular reporting can be found in other tabs which include Phase, Route, Resource, and Material Usage.
 
 ![Active Storm Report](/images/soc/soc-login-and-navigation/active-storm-report.png){: .width-xl}{: data-lightbox="6"}
 </section>
@@ -68,7 +68,7 @@ The Event Management page allows users to create new Events as storms are announ
 <section id="MC311-Tickets" markdown="1">
 ### MC311 Tickets
 
-The MC311 system is used by Montgomery County, MD to process emergency ticket requests received during a snow storm. The SNOWiQ's MC311 Tickets page allows Admin users to send emergency requests received from the MC311 system to Supervisors, who will in turn assign them to Drivers during an event.
+The MC311 system is used by Montgomery County, MD to process service requests from residents during a snow storm. The SNOWiQ MC311 Tickets page allows Admin users to send requests imported from the MC311 system to Supervisors, who will in turn assign them to Drivers during an event.
 
 ![MC311 Tickets](/images/soc/soc-login-and-navigation/mc311-tickets.png){: .width-xl}{: data-lightbox="8"}
 </section>
@@ -87,6 +87,21 @@ The User Management page allows Admin users to view and search for users, edit u
 The Route Plans page allows Admin users to view the current version of geo-data used to map routes in a depot. Users can also use this page to upload a new file to update the route mapping within a depot.
 
 ![Route Plans](/images/soc/soc-login-and-navigation/route-plans.png){: .width-xl}{: data-lightbox="10"}
+</section>
+
+<section id="Truck-Management" markdown="1">
+### Truck Management
+
+The Truck Management page allows users to add trucks and manage truck profiles, inspection details, and certification. See [Truck Management](soc-truck-management.html).
+
+![Truck Management](/images/soc/soc-login-and-navigation/truck-management.png){: .width-xl}{: data-lightbox="11"}
+</section>
+
+<section id="Other-Pages" markdown="1">
+### Other Pages
+
+* **Contractors and Requests** - Manage contractor companies, truck availability and truck-specific requests for an event. See [Contractor Request](soc-contractor-request.html).
+* **Road Conditions** - View road conditions reported from the Supervisor App, with a thermal map and trends chart. See [Road Conditions](soc-road-conditions.html).
 </section>
 </section>
 </section>

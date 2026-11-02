@@ -48,13 +48,13 @@ To do so click on the **Add Request** button, then fill out the form which speci
 
 ## Contractors Menu
 
-After a Supervisor has added a contractor company to support an upcoming snowstorm event, the Contractor Manger will receive an email notification asking to first update and confirm truck availability.
+After a Supervisor has added a contractor company to support an upcoming snowstorm event, the Contractor Manager will receive an email notification asking to first update and confirm truck availability.
 
 After clicking a link provided in the request email, the Contractor Manager user will access Contractors page.
 
 ![](/images/soc/soc-contractor-request/soc-contractors.png){: .width-xl}{: data-lightbox="1"}
 
-This page is designed for contractor Contractor Managers, but can also be accessed by a Supervisor on a manager's behalf.
+This page is designed for Contractor Managers, but can also be accessed by a Supervisor on a manager's behalf.
 
 This page can also be accessed under **Main Menu > Administration > Contractors**.
 
@@ -73,4 +73,4 @@ Lastly, the Contractor Manager must provide confirmation of a truck specific req
 
 ![](/images/soc/soc-contractor-request/soc-confirm-contractor-request.png){: .width-xl}{: data-lightbox="1"}
 
-Once confrmed by the Contractor Manager, the Supervisor will see the request status changes to Confirmed.
+Once confirmed by the Contractor Manager, the Supervisor will see the request status change to Confirmed.

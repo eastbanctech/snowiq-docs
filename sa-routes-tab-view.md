@@ -12,7 +12,7 @@ comments: true
 <section id="Routes-Tab-View" markdown="1">
 # Routes Tab View
 
-A panel on the left has three tabs: Routes, Resources, Tickets and Inspectors. The app opens to Routes, as seen below.
+A panel on the left has four tabs: Routes, Resources, Tickets, and Inspectors. The app opens to Routes, as seen below.
 
 The Route panel displays a list of routes with their corresponding route name and number, the percentage of completion for any active assignment, the total number of miles on the route, and a color coded status indicator on the map. Filters for the list are available above the list and include the following: by Depot, Route Type, and Route Status.  
 
@@ -21,7 +21,7 @@ The Route panel displays a list of routes with their corresponding route name an
 <section id="Route-Filters" markdown="1">
 ## Route Filters
 
-Using the filters above, the route list determine what is displayed on the map. Setting a filter can add or remove map elements such as route outlines, routes of different types (priorities), or routes with different statuses. Availible filters and their options are described below.
+The filters above the route list determine what is displayed on the map. Setting a filter can add or remove map elements such as route outlines, routes of different types (priorities), or routes with different statuses. Available filters and their options are described below.
 
 <section id="Depot" markdown="1">
 ### Depot
@@ -46,14 +46,14 @@ The Route Status filter allows users to view any routes set to a specific status
 
 * Unassigned – When there are no assignments created for the route.
 * In Progress – When a route has at least one assignment attached to it that hasn't been completed yet.
-* Completed – When all routes have been completed by the assigned Driver(s), or the Inspector or Supervisor has manually set the route to 'Completed' 
+* Completed – When all assignments on the route have been completed by the assigned Driver(s), or the Inspector or Supervisor has manually set the route to 'Completed' 
 * Inspected – When a route has had its assignment(s) verified and finalized by an Inspector.
 </section>
 </section>
 <section id="Route-Details" markdown="1">
 ## Route Details
 
-Selecting a route label from the list focuses on that single route on the map (shpwn below), and displays a 'Route Details' panel on the left. The panel includes the percentage of completion for a route if it is in-progress, along with a progress bar, the driver(s) assigned to the route, the driver's contact information, and the status of the route with a timestamp. The 'Route Details' panel also allows a user to 'Assign new drivers' to the route and review the near-real time progress of the driver by viewing the breadcrumb display on the route. Breadcrumbs are displayed as the driver completes the route as shown below. 
+Selecting a route label from the list focuses on that single route on the map (shown below), and displays a 'Route Details' panel on the left. The panel includes the percentage of completion for a route if it is in-progress, along with a progress bar, the driver(s) assigned to the route, the driver's contact information, and the status of the route with a timestamp. The 'Route Details' panel also allows a user to 'Assign Resources' to the route and review the near-real time progress of the driver by viewing the breadcrumb display on the route. Breadcrumbs are displayed as the driver completes the route as shown below. 
 
 <img src="images/supervisor/sa-routes-tab-view/routes-details.png" class="ios width-xl" data-lightbox="4" />
 
