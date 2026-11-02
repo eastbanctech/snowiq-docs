@@ -13,14 +13,14 @@ comments: true
 <section id="Service-Tickets-Request-Management" markdown="1">
 # Service Tickets Request Management
 
-The MC311 system is used by Montgomery County, MD to process ticket requests that come in during the snow storm. The SNOWiQ's MC311 Tickets page allows Admin users to send the ticket requests imported from MC311 to Supervisors who will in turn assign them to Drivers during an event. Additionally, users are able to create emergency request tickets for specific addresses.
+The MC311 system is used by Montgomery County, MD to process ticket requests that come in during the snow storm. The SNOWiQ MC311 Tickets page allows Admin users to send the ticket requests imported from MC311 to Supervisors who will in turn assign them to Drivers during an event. Additionally, users are able to create emergency request tickets for specific addresses.
 
 There are two ways to view the tickets: the List view and the Map View, as shown below:
 
 <section id="Ticket-List-View" markdown="1">
 ## Ticket List View
 
-This view is a standard table that allows users to close (blue 'Close' button) or assign (blue 'Send' button) tickets to Supervisors. Additionally, there are multiple filters available to narrow down the list displayed: Service Request (SR) ID, Route Name/Number, Depot, Supervisors the ticket is assigned to, Status Indicator, and Type of Ticket. A user can also filter the tickets by the time they were opened and/or closed.  
+This view is a standard table that allows users to close (blue 'Close' button) or send (blue 'Send' button) tickets to Supervisors. Additionally, there are multiple filters available to narrow down the list displayed: Service Request (SR) ID, Route Name/Number, Depot, Supervisors the ticket is assigned to, Status Indicator, and Type of Ticket. A user can also filter the tickets by the time they were opened and/or closed.  
 
 ![MC311 Ticket Management](/images/soc/soc-mc311-tickets/mc311-ticket-management.png){: .width-xl}{: data-lightbox="1"}
 
@@ -59,8 +59,8 @@ The Ticket Status filter allows users to view any ticket set to a specific statu
 The System identifies the route by the address of the ticket and performs checks if the route is being treated/plowed. The system takes the following actions based on this check:
 
 * If the route is not yet started (= unassigned, pending or assigned status) - Auto-close the ticket.
-* If the route has been started (=started state) but there're no breadcrumbs near the address in the ticket - Auto-close the ticket.
-* If the route is started and there are breadcrumbs near the address on the ticket, or the route is in completed/inspected status - 311 ticket will remain open (i.e., will not auto-close tickets for areas that not yet been serviced).
+* If the route has been started (=started state) but there are no breadcrumbs near the address in the ticket - Auto-close the ticket.
+* If the route is started and there are breadcrumbs near the address on the ticket, or the route is in completed/inspected status - 311 ticket will remain open (i.e., tickets are auto-closed only for areas that have not yet been serviced, because the route will be treated anyway).
 </section>
 </section>
 
@@ -76,7 +76,7 @@ Clicking on the blue arrow next to the ticket in the left panel or on the marker
 <section id="Clusters" markdown="1">
 ### Clusters
 
-When a user zooms outs, markers with numbers inside them are displayed called 'clusters' that de-clutter the map and group together as markers. Clicking on a cluster allows the user to zoom in on that area and view the separated markers on the map. 
+When a user zooms out, markers with numbers inside them are displayed called 'clusters' that de-clutter the map and group together as markers. Clicking on a cluster allows the user to zoom in on that area and view the separated markers on the map. 
 </section>
 </section>
 
@@ -87,9 +87,9 @@ In order for the ticket to be worked on, it must go through a sequence of steps,
 
 * Locate the ticket in either the List View or the Map View
 * Select the blue 'Send' button, which is located on the List View on the right of the ticket, or on the Map View in the popup details for the ticket
-* Enter any notes in the Note field, select a Supervisor from the dropdown, and then select 'Send', as shown below.
+* Enter any notes in the Note field, select a Supervisor from the dropdown, and then select 'Send'.
 
-* Once the ticket is sent, the Supervisor will continue through the SNOWiQ iPad Supervisor App to assign drivers to a ticket. (THis process is described  here.)
+* Once the ticket is sent, the Supervisor will continue through the SNOWiQ iPad Supervisor App to assign drivers to a ticket. (This process is described in [Assigning Resource to Tickets](sa-supervisor-activities.html#Assigning-Resource-to-Tickets).)
 </section>
 
 <section id="Closing-Tickets" markdown="1">
@@ -101,14 +101,13 @@ An Admin user can manually close the ticket if the ticket is deemed to be invali
 * Click the blue 'Close' button which is located on the List View on the right of the ticket, or on the Map View in the popup details for the ticket, as shown below.
 * Select 'Yes' on the validation popup.
 
-![Close_Ticket](https://github.com/eastbanctech/snowiq-docs/assets/121882947/fd2326de-d0b6-4c04-b884-67ea46a810dc){: .width-xl}{: data-lightbox="3"}
+![Close Ticket](/images/soc/soc-mc311-tickets/close-ticket.png){: .width-xl}{: data-lightbox="4"}
 
-![Close_Ticket1](https://github.com/eastbanctech/snowiq-docs/assets/121882947/31a5d83e-314c-444c-a3b5-b0f7ade9c451){: .width-xl}{: data-lightbox="3"}
+![Close Ticket1](/images/soc/soc-mc311-tickets/close-ticket-confirm.png){: .width-xl}{: data-lightbox="4"}
 
-If the status of the ticket is 'Assigned' or 'In Progress', a warining prompt will display as shown below:
+If the status of the ticket is 'Assigned' or 'In Progress', a warning prompt will display as shown below:
 
-![Screenshot 2021-03-05 100512](https://user-images.githubusercontent.com/79857237/110134084-06a7df80-7d9b-11eb-94cc-93a25ec425af.png){: .width-xl}{: data-lightbox="3"}
-
+![Close Ticket3](/images/soc/soc-mc311-tickets/close-ticket-warning.png){: .width-xl}{: data-lightbox="4"}
 </section>
 
 <section id="Creating-Emergency-Ticket-Requests" markdown="1">
@@ -128,11 +127,11 @@ An Admin user can manually create an Emergency Ticket by doing the following:
 
 * Click on the marker and the system will display the following prompt.
 
-![Emergency_Ticket](https://github.com/eastbanctech/snowiq-docs/assets/121882947/dddb3399-595b-416c-9c1f-744ef2ac421e){: .width-xl}{: data-lightbox="8"}
+![Emergency Ticket](/images/soc/soc-mc311-tickets/emergency-ticket-prompt.png){: .width-xl}{: data-lightbox="8"}
 
 * Enter any notes in the Notes field and then select a Supervisor to send it to.
 
-![Emergency_Ticket3](https://github.com/eastbanctech/snowiq-docs/assets/121882947/a4c6b0fb-3ad8-4c5d-9d30-6d8886bdc32a){: .width-xl}{: data-lightbox="8"}
+![Emergency Ticket3](/images/soc/soc-mc311-tickets/emergency-ticket-send.png){: .width-xl}{: data-lightbox="8"}
 
 * If the ticket was created while on the MC311 Tickets Map View, the newly created ticket is added to the list on the panel to the left with a red asterisk as  an Emergency Ticket. Its status is set to 'Sent' which indicates the process of sending it to the Supervisor has been completed.
 </section>

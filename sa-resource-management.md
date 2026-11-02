@@ -5,7 +5,7 @@ author: EastBanc Technologies
 name: EastBanc Technologies
 email: contact@eastbanctech.com
 parent: Supervisor App
-nav_order: 7
+nav_order: 8
 platform: false
 comments: true
 ---
@@ -34,7 +34,7 @@ To Check-in a Driver, slide its row in the list to the left, then select Check-i
 
 When the Check-in Request modal opens, you can review Driver details and confirm or deny a Driver.
 
-Once a Request is successfully confirmed, the Driver is validated as a (New) resource.
+Once a Request is successfully confirmed, the Driver is added as a resource with the 'New' status.
 
 
 ## Shift Handover
@@ -46,7 +46,7 @@ Once the handover procedure is completed and assignments are moved to a new reso
 
 ## Release Resources
 
-When a Driver has finished his assignments, he can be released from duty.
+When a Driver has finished their assignments, they can be released from duty.
 
 The release of a driver will result in an automatic logout of the driver from the Driver App.
 

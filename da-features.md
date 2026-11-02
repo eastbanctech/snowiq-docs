@@ -44,8 +44,8 @@ Users can open the Main Menu panel by selecting the User Profile picture icon, a
 The panel contains 3 sections:
 
 | 1 | User Profile Details | This section lists the profile details of the logged-in driver. To edit Driver profile details, the user can select 'Profile' as described below. |
-| 2 | Supervisor Details | Each driver has a Supervisor to whom they report, and provides Assignments for that Driver. The Supervisor's name and phone number are listed in this section, along with with the ability to contact the Supervisor directly from within the app by selecting the green phone icon. |
-| 3 | Operations Menu | The Operations menu (as shown above) is for a Driver without any active or future assignments. If a driver receives an assignment or needs to complete an active assignment, an actionable option will be added to the menu, as shown below. |
+| 2 | Supervisor Details | Each driver has a Supervisor to whom they report, and provides Assignments for that Driver. The Supervisor's name and phone number are listed in this section, along with the ability to contact the Supervisor directly from within the app by selecting the green phone icon. |
+| 3 | Operations Menu | The Operations menu (as shown above) is for a Driver without any active or future assignments. If a driver receives an assignment or needs to complete an active assignment, an actionable option will be added to the menu. |
 
 </section>
 
@@ -54,7 +54,7 @@ The panel contains 3 sections:
 
 ## User Profile
 
-A user can select 'Profile' to edit threir user name, phone number, profile picture, and other user details.
+A user can select 'Profile' to edit their user name, phone number, profile picture, and other user details.
 
 <img src="images/driver/da-login-and-navigation/da-user-profile.png" class="ios width-sm" data-lightbox="3" />
 
@@ -74,7 +74,7 @@ A GPS-enabled location screen is provided to verify a user's location and to cal
 
 ## About
 
-This screen contains the app version and environment, and provides the user with access to Help, Terms and Privacy webpages, as well as a features that allow a user to view performance and diagnostic information for the app and device.
+This screen contains the app version and environment, and provides the user with access to Help, Terms and Privacy webpages, as well as features that allow a user to view performance and diagnostic information for the app and device.
 
 <img src="images/driver/da-login-and-navigation/da-about.png" class="ios width-sm" data-lightbox="7" />
 

@@ -21,9 +21,9 @@ The Event Management page allows Admins to create new storm events, edit Event d
 
 **Event Statuses**
 
-| New | Not activated |
-| Archived | Only viewable after archived |
-| Active | Only one active event at a time |
+| New | Created but not yet activated. Can be edited or deleted. |
+| Active | Currently running. Only one event can be active at a time. |
+| Archived | Closed. Can only be viewed. |
 
 <section id="Event-Creation" markdown="1">
 
@@ -31,14 +31,14 @@ The Event Management page allows Admins to create new storm events, edit Event d
 
 When a snow storm is approaching, to plan the event before it occurs (there are no restrictions in the system – 48 hours ahead should suffice), Admins can create a new storm event on the Event Management page by doing the following:
 
-  * Click the orange 'Create New Storm Event' button as shown above. 
+  * Click the 'Create New Storm Event' button as shown above. 
   * Enter details for the new event and select 'Create.'
 
 ![Event Creation](/images/soc/soc-event-management/event-creation.png){: .width-sm}{: data-lightbox="2"}
 
-**Note:** Because the newly created Event is not yet active, it can be edited or deleted. Once the Event is Active, these these options are no longer available. 
+**Note:** Because the newly created Event is not yet active, it can be edited or deleted. Once the Event is Active, these options are no longer available. 
 
-![Event_management](https://github.com/eastbanctech/snowiq-docs/assets/121882947/ac94ab65-ce48-4595-9d42-9816f5bfff50){: .width-xl}{: data-lightbox="11"}
+![Edit or delete a New event](/images/soc/soc-event-management/edit-delete-event.png){: .width-xl}{: data-lightbox="3"}
 
 <section id="Event-Activation" markdown="1">
 
@@ -56,7 +56,7 @@ Once the creation of Phases and Assignments is completed, the next step is to ac
 
 * On the Phase Management page, select the 'Activate/Resume Phase' (play button icon) as shown below to progress from the 'Monitoring Phase' to the next phase. 
 
-  **Typically, it will be the Depot Supervisor's duty to move the phases forward during an Event. Once one Phase is completed, all Supervisors are notified in the Supervisor App (SA) on the iPad that the phase is completed.**
+  **Typically, it will be the Depot Supervisor's duty to move the phases forward during an Event. Once one Phase is completed, all Supervisors are notified in the Supervisor App (SA) that the phase is completed.**
 
   **Only one active event can occur at a time; therefore, if the play buttons are grayed out, this indicates that another Event is already Active.**
 
@@ -69,11 +69,11 @@ Once the creation of Phases and Assignments is completed, the next step is to ac
 
 <section id="Event-Archivation" markdown="1">
 
-## Event Archivation
+## Event Archiving
 
-Once the Event has been completed to an Admin's specifications, the Event can be closed by selecting the 'Archive' button, as shown below. Archiving officially closes the Event in the system and allows activation of another event. 
+Once the Event has been completed to an Admin's specifications, the Event can be closed by selecting the 'Archive' button on the Event Management page. Archiving officially closes the Event in the system and allows activation of another event. 
 
-If there are active assignments, the system will display the prompt/warning shown below. If the user clicks 'Archive' on this prompt, the system, in addition to closing out the Event, will close out and mark as 'completed' all outstanding phases and assignments that were still in progress.
+If there are active assignments, the system will display a warning prompt. If the user clicks 'Archive' on this prompt, the system, in addition to closing out the Event, will close out and mark as 'completed' all outstanding phases and assignments that were still in progress.
 
 </section>
 </section>

@@ -12,7 +12,7 @@ comments: true
 
 <section id="Phase-Management" markdown="1">
 
-## Phase Management
+# Phase Management
 
 Phases are used during a storm Event to define specific Activities that allow planning of Assignments for Resources. Once a new Event is created, the Admin user can create and manage Phases.
 
@@ -22,7 +22,7 @@ Phases are used during a storm Event to define specific Activities that allow pl
 **Phase Statuses:**
 
 | New | Newly created, not activated Phase. |
-| Active | Manually activated Phase (event can have several active phases at the time). |
+| Active | Manually activated Phase (event can have several active phases at the same time). |
 | Completed | Manually completed by Supervisor user. |
 | Archived | Status after event archivation. |
 
@@ -74,7 +74,7 @@ Additionally, after adding a resource, a truck can be assigned here if a driver 
 
 To complete the assignment planning process, click on the "Save Assignments" button, and Progress will be saved in the system. 
 
-If the assignment planning was part of the phase creation process, clicking the 'Save Assignments' button uses will redirect the user to the Phase Management screen. A a new phase will be created and will appear in the list.
+If the assignment planning was part of the phase creation process, clicking the 'Save Assignments' button will redirect the user to the Phase Management screen. A new phase will be created and will appear in the list.
 
 </section>
 
@@ -89,7 +89,7 @@ Phases can be activated only when the storm event they belong to is active.
 
 All default 'Monitoring' phases in all depots will be activated automatically with a storm event.
 
-Typically, it will be the Depot Supervisor's duty to move the phases forward during an Event. Once one Phase is completed, all Supervisors are notified in the Supervisor App (SA) when the phase is completed.
+Typically, it will be the Depot Supervisor's duty to move the phases forward during an Event. When a Phase is completed, all Supervisors are notified in the Supervisor App (SA).
 
 To activate a newly created phase, select the Play button.
 
@@ -106,7 +106,7 @@ Phases can also be paused. This allows retention of the states of all assignment
 ### Phase Completion
 
 A Phase can be completed manually by selecting the Complete button.
-When a storm event is completed, all phases associated with this event are automatically marked 'Complete'.
+When a storm event is archived, all phases associated with this event are automatically marked 'Complete'.
 
 </section>
 </section>
@@ -116,7 +116,7 @@ When a storm event is completed, all phases associated with this event are autom
 
 ## Commit Routes
 
-During phase activation process, Supervisors are able to make a decision which routes they would like to commit for work (such routes become committed).
+During phase activation process, Supervisors can decide which routes they would like to commit for work (such routes become committed).
 Once the phase is active, Supervisors and Inspectors are able to commit more routes for work or choose to commit all non-committed routes within the phase for work as an event progresses.
 
 ![Commit Routes](/images/soc/soc-event-management/commit-routes.png){: .width-xl}{: data-lightbox="8"}

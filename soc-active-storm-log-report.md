@@ -34,7 +34,7 @@ To view the Event Log for a previous Event, open the navigation menu and select 
 <section id="Active-Storm-Report" markdown="1">
 ## Active Storm Report
 
-The Active Storm Report page allows Admin users to view Event Progress in the Statistics Dashboard, using widgets and graphs that are updated in near-real time. The default tab 'Storm Event' displays overall county statistics for the Event, along with data such as when the event activated and ended, predicted duration, active staff, miles plowed, total snowfall, and salt usage. More granular reporting can be found in additional tabs including Phase, Route, Driver, and Salt Usage.
+The Active Storm Report page allows Admin users to view Event Progress in the Statistics Dashboard, using widgets and graphs that are updated in near-real time. The default tab 'Storm Event' displays overall county statistics for the Event, along with data such as when the event activated and ended, predicted duration, active staff, miles plowed, total snowfall, and salt usage. More granular reporting can be found in additional tabs including Phase, Route, Resource, and Material Usage.
 
 <section id="Storm-Event-Tab" markdown="1">
 ### Storm Event Tab
@@ -61,7 +61,7 @@ This tab allows filtering of Route Statistics by Depot, Phase, and Route Type.
 <section id="Driver-Tab" markdown="1">
 ### Resource Tab
 
-This tab allows to view individual Driver statistics by searching for a specific Driver by name or ID. 
+This tab allows users to view individual Resource statistics by searching for a specific Driver by name or ID. 
 
 ![Driver Tab](/images/soc/soc-active-storm-log-report/driver-tab.png){: .width-xl}{: data-lightbox="6"}
 </section>
@@ -77,9 +77,9 @@ This tab allows filtering of Salt/Brine Usage statistics by Depot and Phase.
 <section id="Previous-Event-Reports" markdown="1">
 ### Previous Event Reports
 
-To view the Event Log for a previous Event, open the navigation menu and select the Event Management option. After searching for the specific event, click the 'Event Log' button as shown below, and the Event Log for the specified Event will be displayed as shown above in the previous section.
+To view the Report for a previous Event, open the navigation menu and select the Event Management option. After searching for the specific event, click the 'Reports' button as shown below, and the Statistics Dashboard for the specified Event will be displayed with the tabs described above.
 
-![Previous Event Log](/images/soc/soc-active-storm-log-report/previous-event-log.png){: .width-xl}{: data-lightbox="2"}
+![Previous Event Reports](/images/soc/soc-active-storm-log-report/previous-event-reports.png){: .width-xl}{: data-lightbox="8"}
 </section>
 
 </section>
