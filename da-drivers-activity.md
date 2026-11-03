@@ -77,10 +77,18 @@ This removes the assignment from the Status bar and also moves it from Active As
 
 ### Completing a Multi-Pass Assignment
 
-If a Driver receives an Assignment with Multi-pass toggled on, the Driver will receive a notification. When the Driver completes a pass, they will select 'Complete Pass' in the Navigation menu and can then await further instructions from the supervisor as specified in the status bar. 
-  - If a Supervisor adds another pass for an assignment, the Driver will receive a notification to proceed work on the multi-pass assignment until it is completed, repeating the above steps for each pass.
+Some routes need more than one pass to be fully cleared. If you receive an assignment with Multi-Pass switched on, you will be notified. Work the route as usual. The start time of each pass is recorded automatically.
 
-  - If a Supervisor determines that no additional passes are needed, the Assignment will be removed from the Driver's Active Assignments and will then be displayed in the 'History' tab on the 'Assignments' panel. The status bar will be updated to alert the driver to wait for any further instructions. 
+When you finish a pass, select 'Complete Pass' in the Navigation menu. Then:
+
+* The assignment status changes to 'Completed Pending', and the status bar asks you to wait for instructions.
+* Your breadcrumbs for the pass are cleared from the map, and the assignment details are hidden while you wait.
+* **Every Driver on the same route is put on hold**, even Drivers who have not started yet. You stay on the route and will not get other work until a decision is made.
+
+An Inspector or Supervisor then decides whether the route needs another pass:
+
+* **Another pass is needed:** You get an 'Another Pass Requested' notification that shows who requested it. Your assignment goes back to 'Accepted'. Start working the route again, and select 'Complete Pass' when you finish. These steps repeat for every pass.
+* **The route is done:** The assignment moves from your Active Assignments to the 'History' tab in the 'Assignments' panel. If you have another assignment in your queue, you move on to it. If not, your status changes to 'Ready' for new work.
 
 
 ### Pause/Resume an Assignment

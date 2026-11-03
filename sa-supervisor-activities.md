@@ -111,11 +111,37 @@ The assignment is added to the Future list of each selected Resource with a stat
 
 ## Completing Assignments for Multi-Passes
 
-A multi-pass Assignment (an assignment created when the multi-pass toggle was switched On) requires a Supervisor to determine the next step after each pass is completed by the Driver. Once the Driver completes a pass, the Supervisor receives a 'Pass Completion Notice' prompt with  details about the assignment, including the number of passes made, as shown below. A Supervisor then has two options:  
-1. Tap 'Another Pass' to notify the Driver to continue working on the assignment, or
-1. Tap 'Complete' to complete the multi-pass assignment. 
+Some routes need more than one pass to be fully cleared. For these, create the assignment with the Multi-Pass toggle switched On. When a Driver finishes a pass on a multi-pass route, the route is not closed automatically. Instead, it waits for someone to decide whether another pass is needed.
 
-If a Supervisor selects the first option, the system notifies the Driver to continue working on the assignment (i.e. make another pass). If the supervisor selects the second option, the system marks the multi-pass Assignment as Completed and removes it from the resource's Active Assignments. Completed assignments can be viewed by selecting the History tab.
+<section id="Who-Decides-on-Another-Pass" markdown="1">
+### Who Decides on Another Pass
+
+The decision maker gets the 'Pass Completion Notice' prompt in the Supervisor App:
+
+* **If the route has an assigned Inspector**, the Inspector receives the prompt and makes the decision. An Inspector who created an assignment on the route also receives the prompt.
+* **If the route has no Inspector**, the Supervisor of the route's depot receives the prompt and makes the decision.
+
+If the assignment was created by a Supervisor, that Supervisor also gets a 'Driver Completed Assignment' notification.
+
+Decisions are made in the Supervisor App only. The SOC shows the route's status for monitoring, but you cannot request another pass or complete the route from there.
+</section>
+
+<section id="When-a-Driver-Completes-a-Pass" markdown="1">
+### When a Driver Completes a Pass
+
+When a Driver completes a pass, the route status changes to 'Completed Pending', and **all Drivers on the route are put on hold** until a decision is made.
+
+The [decision maker](#Who-Decides-on-Another-Pass) then sees the 'Pass Completion Notice' prompt with the route details, the number of passes completed so far, and the Drivers on the route. The prompt can take up to a minute to appear. If you close it without choosing an option, it comes back until you make a decision.
+
+Select one of the following:
+
+* **Another Pass**: the route still needs work. The Drivers are notified and continue working the route.
+* **Complete**: the route is done. The route status changes to 'Completed', and the Drivers move on to their next assignment or become 'Ready'.
+
+After the route is completed, it can be [inspected](#Inspecting-Routes).
+
+**Note:** Single-pass routes do not need a decision. The route is completed as soon as the last active Driver on it completes their assignment.
+</section>
 
 </section>
 
@@ -141,6 +167,8 @@ Supervisors can cancel assignments by doing the following:
 ### Inspecting Routes
 
 Once a Route has all its assignments completed, a Supervisor or Inspector needs to change the status of that route to 'Inspected' to verify that the route is finished. To do this, navigate to the Route Details panel and select 'Change Status', and then select 'Inspected' on the prompt.
+
+When a route is marked as 'Inspected', its progress is set to 100%.
  
 <img src="images/supervisor/sa-supervisor-activities/inspecting-routes.png" class="ios width-xl" data-lightbox="20" />
 
