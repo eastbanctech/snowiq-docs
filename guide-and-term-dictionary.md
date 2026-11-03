@@ -297,7 +297,7 @@ Segment type is not the same as route type (Emergency or Residential). Route typ
 | Pending | There is at least one assignment but it hasn't yet been accepted by the Driver. |
 | Assigned | There is at least one accepted assignment for the route. |
 | Started | There is at least one started assignment for the route. |
-| Completed Pending | There is at least one completed pass on a multi-pass assignment and it's awaiting action from Supervisor. |
+| Completed Pending | A pass has been completed on a multi-pass route, and the route is waiting for the Inspector or Supervisor to request another pass or complete it. |
 | Completed | The route has had its assignment(s) completed by assigned driver(s), or the inspector/supervisor manually set the route to 'completed'. |
 | Inspected | The route has had its assignment verified and finalized by an inspector. |
 
@@ -336,7 +336,7 @@ An Assignment is a task created by a Supervisor and assigned to a Resource. An a
 | Accepted | Driver has accepted the assignment. |
 | Started | Driver has arrived at the destination, manually started the assignment, or the assignment has resumed from a paused state. |
 | Completed | Driver has finished working on assignment, or the supervisor has manually marked the route as complete. |
-| Completed Pending | Driver has manually completed a route pass on a multi-pass assignment, and the assignment is pending a review by the Supervisor to determine if another pass is needed. |
+| Completed Pending | A pass has been completed on a multi-pass route. The assignment is on hold until the Inspector or Supervisor decides whether another pass is needed. This applies to every Driver on the route, not just the one who completed the pass. |
 | Cancelled | Supervisor manually canceled the assignment. |
 
 </section>
@@ -345,7 +345,7 @@ An Assignment is a task created by a Supervisor and assigned to a Resource. An a
 <section id="Pass" markdown="1">
 ### Pass, Single-Pass and Multi-Pass Assignments
 
-A Pass is one complete run of a route by a Driver. A **single-pass** assignment is finished after one pass. In a **multi-pass** assignment, the Driver completes a pass and then waits while the Supervisor decides whether another pass is needed (status 'Completed Pending'). The Supervisor either requests another pass or completes the assignment. See [Completing Assignments for Multi-Passes](sa-supervisor-activities.html#Completing-Assignments-for-Multi-Passes).
+A Pass is one complete run of a route by a Driver. A **single-pass** route is completed as soon as the last active Driver on it completes their assignment. On a **multi-pass** route, a completed pass puts the route and all of its Drivers on hold (status 'Completed Pending'). The route's Inspector, or the depot Supervisor if the route has no Inspector, then either requests another pass or completes the route. See [Completing Assignments for Multi-Passes](sa-supervisor-activities.html#Completing-Assignments-for-Multi-Passes).
 </section>
 
 <section id="Priority-Task" markdown="1">
